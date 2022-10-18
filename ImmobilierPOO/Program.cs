@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace ImmobilierPOO
 {
@@ -10,11 +11,14 @@ namespace ImmobilierPOO
             Maison UneAutreMaison = new Maison("4 place Saint Louis, 22100 Dinan", 86.5f, 5, true);
             Maison UneDerniereMaison = new Maison("26 Boulevard Claude Lorrin, 40100 Dax", 25.2f, 2, false);
 
-            Maison[] CatalogueMaisons = new Maison[] { UneMaison, UneAutreMaison, UneDerniereMaison };
+            Terrain UnTerrain = new Terrain("55 route cabossée, 29130 Locmaria-Plouzané", 5000f, 2, true);
+            Terrain UnAutreTerrain = new Terrain("102 route des volcans, 63000 Clermont-Ferrand", 1500f, 4, false);
 
-            foreach (Maison M in CatalogueMaisons)
+            Bien[] CatalogueBiens = new Bien[] { UneMaison, UneAutreMaison, UneDerniereMaison, UnTerrain, UnAutreTerrain };
+
+            foreach (Bien B in CatalogueBiens)
             {
-                Console.WriteLine(M);
+                Console.WriteLine(B);
             }
         }
     }
