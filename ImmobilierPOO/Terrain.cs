@@ -32,13 +32,23 @@ namespace ImmobilierPOO
             int facteur = 3000;
 
             if (this.riviere) { facteur += 500; }
-            if (this.nbCotesClotures < 4) { }
+            if (this.nbCotesClotures < 4) { facteur -= CoutFinirCloture()}
             else { facteur += 200; }
 
             if (Regex.IsMatch(this.Adresse, @"\bParis\b")) { facteur += 7000; }
             else if (Regex.IsMatch(this.Adresse, @"\bLyon\b")) { facteur += 2000; }
 
             return this.Superficie * facteur;
+        }
+
+        public int CoutFinirCloture()
+        {
+            int prix;
+            for (this.nbCotesClotures < 4; this.nbCotesClotures++)
+            {
+                prix += 100
+            }
+             return prix;
         }
     }
 }
