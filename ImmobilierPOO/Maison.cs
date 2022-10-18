@@ -3,32 +3,26 @@ using System.Text.RegularExpressions;
 
 namespace ImmobilierPOO
 {
-    public class Maison
+    public class Maison : Bien
     {
-        public string Adresse;
-        public float Superficie;
         public int NbPieces;
         public bool Jardin;
 
-        public Maison(string adresse, float superficie, int nbPieces, bool jardin)
+        public Maison(string adresse, float superficie, int nbPieces, bool jardin) : base(adresse, superficie)
         {
-            Adresse = adresse;
-            Superficie = superficie;
             NbPieces = nbPieces;
             Jardin = jardin;
         }
 
         public override string ToString()
         {
-            string toString = String.Format("Adresse = {0}\n", this.Adresse);
-            toString += String.Format("Superficie = {0}m²\n", this.Superficie);
-            toString += String.Format("Nombre de pièces = {0}\n", this.NbPieces);
+            string toString = String.Format("Nombre de pièces = {0}\n", this.NbPieces);
             toString += String.Format("Présence d'un jardin = {0}\n", this.Jardin ? "Oui" : "Non");
-            toString += String.Format("> VALEUR = {0}$", this.EvaluationValeur());
+            toString += String.Format("> VALEUR = {0}$\n", this.EvaluationValeur());
             return toString;
         }
 
-        public float EvaluationValeur()
+        public new float EvaluationValeur()
         {
             int facteur = 3000;
 

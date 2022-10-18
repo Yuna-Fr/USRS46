@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yunab\\OneDrive\\Bureau\\Enjmin\\Exs\\ImmobilierPOO\\ImmobilierPOO.csproj",
+      "projectUniqueName": "C:\\Users\\yunab\\OneDrive\\Bureau\\Enjmin\\usrs46\\USRS46\\ImmobilierPOO\\ImmobilierPOO.csproj",
       "projectName": "ImmobilierPOO",
-      "projectPath": "C:\\Users\\yunab\\OneDrive\\Bureau\\Enjmin\\Exs\\ImmobilierPOO\\ImmobilierPOO.csproj",
+      "projectPath": "C:\\Users\\yunab\\OneDrive\\Bureau\\Enjmin\\usrs46\\USRS46\\ImmobilierPOO\\ImmobilierPOO.csproj",
       "packagesPath": "C:\\Users\\yunab\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yunab\\OneDrive\\Bureau\\Enjmin\\Exs\\ImmobilierPOO\\obj\\",
+      "outputPath": "C:\\Users\\yunab\\OneDrive\\Bureau\\Enjmin\\usrs46\\USRS46\\ImmobilierPOO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yunab\\AppData\\Roaming\\NuGet\\NuGet.Config",
