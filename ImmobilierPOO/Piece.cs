@@ -3,29 +3,21 @@ using System.Text.RegularExpressions;
 
 namespace ImmobilierPOO
 {
-    public class Bien
+    public class Piece
     {
-        public string Adresse;
-        public float Superficie;
+        public int Superficie;
+        public string Nom;
 
-        public Bien(string adresse, float superficie)
+        public Piece(int superficie, string nom)
         {
-            Adresse = adresse;
             Superficie = superficie;
+            Nom = nom;
         }
 
         public override string ToString()
         {
-            string toString = String.Format("Adresse = {0}\n", this.Adresse);
-            toString += String.Format("Superficie = {0}m²\n", this.Superficie);
+            string toString = String.Format("La pièce {0} fait {1}m²", this.Nom, this.Superficie);
             return toString;
-        }
-
-        public float EvaluationValeur()
-        {
-            int facteur = 3000;
-
-            return this.Superficie * facteur;
         }
     }
 }
