@@ -31,6 +31,12 @@ namespace ImmobilierPOO
 
             facteur += 100 * this.NbCotesClotures;
 
+            while(NbCotesClotures < 4)//coût des clotures à acheter et installer
+            {
+                facteur -= 150;
+                NbCotesClotures++;
+            }
+
             if (Regex.IsMatch(this.Adresse, @"\bParis\b")) { facteur += 7000; }
             else if (Regex.IsMatch(this.Adresse, @"\bLyon\b")) { facteur += 2000; }
 
